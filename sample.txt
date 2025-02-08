@@ -1,0 +1,62 @@
+Hi, I'm Pradeep RS, a dedicated and innovative Full Stack Java Web Developer. I graduated in 2024 from   PES University  , majoring in   Computer Science   with a minor in   Cybersecurity  . My academic journey has provided me with a solid foundation in secure software development, programming principles, and emerging technologies.  
+
+    Professional Experience    
+1.   Software Engineer Intern at Dheemahi Avishkars:    
+   - Developed and deployed a fully functional   e-commerce platform   using   PHP   and   SQL  , which streamlined online operations for the business.  
+   - Focused on enhancing user experience, optimizing backend functionalities, and integrating database solutions to ensure secure and efficient data management.  
+   
+2.   Software Development Intern at CyberJeet Pvt Ltd:    
+   - Contributed to building and enhancing   enterprise-grade software solutions   with a focus on scalability and performance.  
+   - Worked on feature development, bug fixes, and code optimization, collaborating with cross-functional teams to deliver high-quality products.  
+
+    Patent    
+As a co-author of a patent, I have demonstrated my ability to contribute to cutting-edge innovation and solve complex challenges through creative thinking and technical expertise.  
+
+    Skills and Interests    
+I am proficient in   Java, Spring, Hibernate, and JavaScript   technologies, with a strong passion for secure and scalable software development. My problem-solving mindset allows me to tackle complex issues efficiently.  
+
+Beyond work, I enjoy creative pursuits such as   writing, drawing, cycling  , and immersing myself in   mythological podcasts  . These hobbies inspire me to think creatively and stay balanced.  
+
+I'm eager to contribute to forward-thinking teams where I can apply my technical skills and passion for innovation to make meaningful contributions.
+
+
+
+
+BigEndian TASK
+
+File Transfer with Packet Order and Checksum Verification
+Summary
+This project implements a reliable file transfer system using Python sockets, focusing on maintaining packet order and data integrity through checksum verification. It ensures that file transfers are robust and error-free by employing acknowledgment (ACK) and negative acknowledgment (NACK) techniques.
+
+Key Features
+Reliable File Transfer:
+Ensures accurate file transmission from client to server.
+
+Packet Ordering:
+Maintains the correct order of packets using sequence numbers to prevent data loss or duplication.
+
+Checksum Verification:
+
+A unique checksum (SHA-256 hash) is generated for each packet.
+The server verifies each packet's integrity by matching the received checksum with the calculated checksum.
+Any checksum mismatch triggers a packet retransmission.
+Error Handling:
+
+If a packet's checksum doesn't match, the server sends a NACK (negative acknowledgment) to the client.
+Correct packets receive an ACK (positive acknowledgment) for successful transfer.
+How It Works
+Server Setup:
+
+The server listens for incoming connections.
+It validates packets and ensures proper file assembly.
+Client Transmission:
+
+The client reads the file in chunks, calculates checksums, and sends packets with their sequence numbers.
+Verification and Acknowledgment:
+
+The server verifies each packet's checksum.
+Acknowledges successful packets (ACK) or requests retransmissions (NACK).
+Checksum Handling:
+
+Different files produce varying checksums for data integrity verification.
+This ensures that even minor file changes are detectable.`
